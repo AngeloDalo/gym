@@ -14,5 +14,21 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('guest.welcome');
 });
+
+//Auth::routes();
+
+// Route::middleware('auth')
+//     ->namespace('Admin')
+//     ->name('admin.') //name
+//     ->prefix('admin') //uri
+//     ->group(function () {
+//         Route::get('/', 'HomeController@index')->name('home');
+//         Route::resource('apartments', 'ApartmentController');
+//         Route::resource('/sponsorships', 'SponsorshipController');
+//     });
+
+// Route::get('{any?}', function ($name = null) {
+//     return view('guest.welcome');
+// })->where('any', '.*');
