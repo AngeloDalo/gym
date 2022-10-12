@@ -32,3 +32,7 @@ Route::get('/', function () {
 // Route::get('{any?}', function ($name = null) {
 //     return view('guest.welcome');
 // })->where('any', '.*');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
