@@ -63,7 +63,7 @@
                             </div>
 
                             <div class="form-group row">
-                                <label for="code"
+                                <label for="role"
                                     class="col-md-4 col-form-label text-md-right">{{ __('Ruolo') }}</label>
 
                                 <div class="col-md-6 d-flex p-2">
