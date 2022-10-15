@@ -4,16 +4,16 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Day extends Model
+class Payment extends Model
 {
     protected $fillable = [
-        'name',
+        'type',
+        'sum',
         'created_at',
         'updated_at',
     ];
 
-    public function cards()
-    {
-        return $this->hasMany('App\Card');
+    public function users() {
+        return $this->belongsToMany('App\User');
     }
 }

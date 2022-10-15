@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
-use App\Day;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class DayController extends Controller
+class CardController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class DayController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Day  $day
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Day $day)
+    public function show($id)
     {
         //
     }
@@ -52,10 +52,10 @@ class DayController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Day  $day
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Day $day)
+    public function edit($id)
     {
         //
     }
@@ -64,10 +64,10 @@ class DayController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Day  $day
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Day $day)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -75,10 +75,10 @@ class DayController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Day  $day
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Day $day)
+    public function destroy($id)
     {
         //
     }
